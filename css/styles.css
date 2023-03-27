@@ -74,7 +74,11 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--accent-background);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)), 
+   url(../imges/hero.jpg);
+  background-size: cover;
+  background-color: var(--accent-background); 
 }
 
 .hero-container {
@@ -125,6 +129,17 @@ img {
   margin-left: var(--columns-gap);
   margin-top: var(--columns-gap);
 }
+
+.peculiarities-cart{
+display: flex;
+justify-content: center;
+padding-top: 25px;
+padding-bottom: 25px;
+margin-bottom: 30px;
+background: #F5F4FA;
+border-radius: 4px;
+}
+
 
 .title {
   margin-bottom: 10px;
@@ -195,11 +210,71 @@ img {
 }
 
 .team-description {
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
 }
 
+.team-list-icon{
+ display: flex; 
+ justify-content: space-evenly;
+}
+
+
+.team-list-item-icon:hover{
+background-color: var(--accent-color);
+cursor: pointer;
+border-radius: 50%;
+}
+
+.team-item-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: transparent;
+fill: #AFB1B8;
+}
+
+.team-list-item-icon:hover .team-item-icon{
+fill: #FFFFFF;
+}
+
+
+/* ------clients-------- */
+.clients-title{
+ text-align: center; 
+ margin-bottom: 50px;
+}
+
+.clients-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--columns-gap));
+  margin-left: calc(-1 * var(--columns-gap));
+}
+
+.clients-list-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 180px) / 6);
+  margin-top: var(--columns-gap);
+margin-left: var(--columns-gap);
+padding: 23px 0;
+  border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+.clients-list-item:hover{
+ border: 1px solid var(--accent-color);
+ cursor: pointer;
+}
+.clients-item-icon{
+  
+}
 /* ========portfolio====== */
 
 /* ---header---- */
