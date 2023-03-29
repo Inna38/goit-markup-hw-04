@@ -271,17 +271,17 @@ align-items: center;
 border: 1px solid #afb1b8;
 height: 100%;
 width: 100%;
+fill: #AFB1B8;
 }
 
 .clients-item-icon:hover,
 .clients-item-icon:focus {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
   cursor: pointer;
 }
 
-.clients-item-icon:focus .icon{
-   border: 1px solid var(--accent-color);
-}
+
 
 
 /* ========portfolio====== */
